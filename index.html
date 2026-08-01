@@ -10,7 +10,162 @@
 </head>
 <body>
 
+<!-- ══════════════ 像素圖示（自繪 SVG，非遊戲素材） ══════════════ -->
+<svg class="sprite" aria-hidden="true" focusable="false" shape-rendering="crispEdges">
+  <defs>
+
+    <symbol id="i-log" viewBox="0 0 16 16">
+      <rect x="2" y="2" width="12" height="12" fill="#7a5433"/>
+      <rect x="4" y="2" width="2" height="12" fill="#9a6c44"/>
+      <rect x="9" y="2" width="2" height="12" fill="#9a6c44"/>
+      <rect x="6" y="5" width="2" height="3" fill="#8a5f3c"/>
+      <rect x="11" y="8" width="2" height="3" fill="#8a5f3c"/>
+    </symbol>
+
+    <symbol id="i-table" viewBox="0 0 16 16">
+      <rect x="2" y="2" width="12" height="12" fill="#8a5f3c"/>
+      <rect x="2" y="2" width="12" height="3" fill="#a9784f"/>
+      <rect x="4" y="6" width="8" height="1" fill="#5e4028"/>
+      <rect x="4" y="9" width="8" height="1" fill="#5e4028"/>
+      <rect x="6" y="5" width="1" height="8" fill="#5e4028"/>
+      <rect x="9" y="5" width="1" height="8" fill="#5e4028"/>
+    </symbol>
+
+    <symbol id="i-pickaxe" viewBox="0 0 16 16">
+      <rect x="3" y="4" width="2" height="2" fill="#b98a63"/>
+      <rect x="5" y="3" width="6" height="2" fill="#b98a63"/>
+      <rect x="11" y="4" width="2" height="2" fill="#b98a63"/>
+      <rect x="7" y="5" width="2" height="2" fill="#8a6240"/>
+      <rect x="8" y="7" width="2" height="2" fill="#8a6240"/>
+      <rect x="9" y="9" width="2" height="2" fill="#8a6240"/>
+      <rect x="10" y="11" width="2" height="3" fill="#8a6240"/>
+    </symbol>
+
+    <symbol id="i-coal" viewBox="0 0 16 16">
+      <rect x="2" y="2" width="12" height="12" fill="#9a958e"/>
+      <rect x="4" y="4" width="3" height="3" fill="#26241f"/>
+      <rect x="9" y="6" width="3" height="3" fill="#26241f"/>
+      <rect x="5" y="9" width="2" height="2" fill="#26241f"/>
+      <rect x="10" y="3" width="2" height="2" fill="#26241f"/>
+    </symbol>
+
+    <symbol id="i-torch" viewBox="0 0 16 16">
+      <rect x="7" y="7" width="2" height="8" fill="#8a6240"/>
+      <rect x="6" y="3" width="4" height="4" fill="#f0a020"/>
+      <rect x="7" y="4" width="2" height="2" fill="#ffe89a"/>
+    </symbol>
+
+    <symbol id="i-bed" viewBox="0 0 16 16">
+      <rect x="1" y="6" width="14" height="6" fill="#c4523d"/>
+      <rect x="1" y="6" width="4" height="6" fill="#f0ece4"/>
+      <rect x="1" y="12" width="2" height="2" fill="#7a5433"/>
+      <rect x="13" y="12" width="2" height="2" fill="#7a5433"/>
+    </symbol>
+
+    <symbol id="i-block" viewBox="0 0 16 16">
+      <rect x="2" y="4" width="12" height="10" fill="#7a5433"/>
+      <rect x="2" y="2" width="12" height="3" fill="#5c9c46"/>
+      <rect x="4" y="7" width="3" height="2" fill="#8a5f3c"/>
+      <rect x="9" y="10" width="3" height="2" fill="#8a5f3c"/>
+    </symbol>
+
+    <symbol id="i-redstone" viewBox="0 0 16 16">
+      <rect x="3" y="7" width="10" height="2" fill="#8f2018"/>
+      <rect x="7" y="3" width="2" height="10" fill="#8f2018"/>
+      <rect x="6" y="6" width="4" height="4" fill="#ff4b3e"/>
+    </symbol>
+
+    <symbol id="i-portal" viewBox="0 0 16 16">
+      <rect x="2" y="1" width="12" height="14" fill="#2b2338"/>
+      <rect x="4" y="3" width="8" height="10" fill="#8b4fc7"/>
+      <rect x="6" y="5" width="2" height="2" fill="#d0aef5"/>
+      <rect x="9" y="9" width="2" height="2" fill="#d0aef5"/>
+    </symbol>
+
+    <symbol id="i-dragon" viewBox="0 0 16 16">
+      <rect x="6" y="2" width="4" height="2" fill="#1a1526"/>
+      <rect x="4" y="4" width="8" height="6" fill="#1a1526"/>
+      <rect x="3" y="10" width="10" height="4" fill="#1a1526"/>
+      <rect x="6" y="5" width="2" height="2" fill="#8b5fc0"/>
+      <rect x="9" y="8" width="2" height="2" fill="#8b5fc0"/>
+    </symbol>
+
+    <symbol id="i-book" viewBox="0 0 16 16">
+      <rect x="3" y="2" width="10" height="12" fill="#7a2e2e"/>
+      <rect x="5" y="3" width="7" height="10" fill="#f0ece4"/>
+      <rect x="3" y="2" width="2" height="12" fill="#5e2222"/>
+      <rect x="7" y="6" width="2" height="2" fill="#b98ae0"/>
+    </symbol>
+
+    <symbol id="i-sapling" viewBox="0 0 16 16">
+      <rect x="7" y="8" width="2" height="6" fill="#6b4a2c"/>
+      <rect x="4" y="4" width="8" height="4" fill="#5c9c46"/>
+      <rect x="6" y="2" width="4" height="2" fill="#6fb054"/>
+    </symbol>
+
+    <symbol id="i-wheat" viewBox="0 0 16 16">
+      <rect x="7" y="6" width="2" height="8" fill="#b8901f"/>
+      <rect x="6" y="2" width="4" height="2" fill="#e0bf4a"/>
+      <rect x="4" y="4" width="3" height="2" fill="#e0bf4a"/>
+      <rect x="9" y="4" width="3" height="2" fill="#e0bf4a"/>
+      <rect x="4" y="8" width="3" height="2" fill="#e0bf4a"/>
+      <rect x="9" y="8" width="3" height="2" fill="#e0bf4a"/>
+    </symbol>
+
+    <symbol id="i-creeper" viewBox="0 0 16 16">
+      <rect width="16" height="16" fill="#6aa84f"/>
+      <rect x="1" y="2" width="3" height="3" fill="#5d9646"/>
+      <rect x="12" y="9" width="3" height="4" fill="#5d9646"/>
+      <rect x="6" y="1" width="3" height="2" fill="#78b95c"/>
+      <rect x="3" y="4" width="3" height="3" fill="#1c2b18"/>
+      <rect x="10" y="4" width="3" height="3" fill="#1c2b18"/>
+      <rect x="6" y="7" width="4" height="4" fill="#1c2b18"/>
+      <rect x="5" y="9" width="2" height="4" fill="#1c2b18"/>
+      <rect x="9" y="9" width="2" height="4" fill="#1c2b18"/>
+    </symbol>
+
+    <symbol id="i-enderman" viewBox="0 0 16 16">
+      <rect x="4" y="2" width="8" height="6" fill="#15121d"/>
+      <rect x="6" y="8" width="4" height="4" fill="#15121d"/>
+      <rect x="2" y="6" width="2" height="8" fill="#15121d"/>
+      <rect x="12" y="6" width="2" height="8" fill="#15121d"/>
+      <rect x="4" y="4" width="3" height="2" fill="#c77dff"/>
+      <rect x="9" y="4" width="3" height="2" fill="#c77dff"/>
+    </symbol>
+
+  </defs>
+</svg>
+
 <header class="hero">
+
+  <!-- 方塊地景（裝飾用，自繪） -->
+  <svg class="scenery" viewBox="0 0 320 96" preserveAspectRatio="xMidYMax slice"
+       aria-hidden="true" focusable="false" shape-rendering="crispEdges">
+    <!-- 太陽 -->
+    <rect x="252" y="14" width="16" height="16" fill="#ffe89a" opacity=".85"/>
+    <!-- 雲 -->
+    <rect x="40"  y="20" width="32" height="6" fill="#fff" opacity=".28"/>
+    <rect x="52"  y="14" width="20" height="6" fill="#fff" opacity=".28"/>
+    <rect x="180" y="30" width="26" height="6" fill="#fff" opacity=".22"/>
+    <!-- 遠山 -->
+    <rect x="0"   y="60" width="60" height="36" fill="#2f5b2a" opacity=".55"/>
+    <rect x="60"  y="52" width="40" height="44" fill="#2f5b2a" opacity=".55"/>
+    <rect x="228" y="56" width="52" height="40" fill="#2f5b2a" opacity=".55"/>
+    <rect x="280" y="64" width="40" height="32" fill="#2f5b2a" opacity=".55"/>
+    <!-- 樹 -->
+    <rect x="196" y="44" width="32" height="20" fill="#4f8a3c"/>
+    <rect x="204" y="36" width="16" height="8"  fill="#5c9c46"/>
+    <rect x="208" y="64" width="8"  height="16" fill="#6b4a2c"/>
+    <!-- 草地表層 -->
+    <rect x="0"   y="76" width="320" height="6"  fill="#5c9c46"/>
+    <rect x="0"   y="82" width="320" height="14" fill="#7a5433"/>
+    <rect x="96"  y="70" width="72"  height="6"  fill="#5c9c46"/>
+    <rect x="96"  y="76" width="72"  height="20" fill="#7a5433"/>
+    <!-- 礦石點綴 -->
+    <rect x="24"  y="88" width="6" height="6" fill="#9a958e"/>
+    <rect x="248" y="88" width="6" height="6" fill="#6fd6d0" opacity=".8"/>
+  </svg>
+
   <div class="wrap">
     <p class="kicker">寫給爸媽的</p>
     <h1>麥塊入門指南</h1>
@@ -172,20 +327,38 @@
 
   <h3 class="sub">第一晚 SOP（新手最容易死在這）</h3>
   <p>麥塊天黑就出怪，第一天大約 10 分鐘要完成這一串：</p>
-  <ol class="steps compact">
-    <li><p><strong>徒手打樹</strong> → 拿木頭 → 合成木板 → 做<strong>工作台</strong></p></li>
-    <li><p>工作台做<strong>木鎬</strong> → 挖石頭（至少 20 顆）</p></li>
-    <li><p>石頭做<strong>石鎬、石斧、石劍</strong></p></li>
-    <li><p>挖到<strong>煤炭</strong> → 木棒 ＋ 煤 ＝ <strong>火把</strong></p></li>
-    <li><p>打羊拿羊毛（3 羊毛 ＋ 3 木板 ＝ <strong>床</strong>）</p></li>
-    <li><p>挖進山壁封住洞口，或蓋個小土屋，<strong>睡覺跳過夜晚</strong></p></li>
+  <ol class="steps compact iconed">
+    <li>
+      <svg class="ico" aria-hidden="true"><use href="#i-log"/></svg>
+      <p><strong>徒手打樹</strong> → 拿木頭 → 合成木板 → 做<strong>工作台</strong></p>
+    </li>
+    <li>
+      <svg class="ico" aria-hidden="true"><use href="#i-table"/></svg>
+      <p>工作台做<strong>木鎬</strong> → 挖石頭（至少 20 顆）</p>
+    </li>
+    <li>
+      <svg class="ico" aria-hidden="true"><use href="#i-pickaxe"/></svg>
+      <p>石頭做<strong>石鎬、石斧、石劍</strong></p>
+    </li>
+    <li>
+      <svg class="ico" aria-hidden="true"><use href="#i-torch"/></svg>
+      <p>挖到<strong>煤炭</strong> → 木棒 ＋ 煤 ＝ <strong>火把</strong></p>
+    </li>
+    <li>
+      <svg class="ico" aria-hidden="true"><use href="#i-bed"/></svg>
+      <p>打羊拿羊毛（3 羊毛 ＋ 3 木板 ＝ <strong>床</strong>）</p>
+    </li>
+    <li>
+      <svg class="ico" aria-hidden="true"><use href="#i-block"/></svg>
+      <p>挖進山壁封住洞口，或蓋個小土屋，<strong>睡覺跳過夜晚</strong></p>
+    </li>
   </ol>
   <p class="highlight">床非常關鍵：睡覺不只跳過夜晚，還會設定<strong>重生點</strong>。沒床死掉會被丟回出生點，可能離家幾千格。</p>
 
   <h3 class="sub">裝備進程</h3>
   <p class="progression">木 → 石 → 鐵 → 鑽石 → 獄髓 Netherite</p>
   <p>前三階很快，<strong>鑽石是分水嶺</strong>，獄髓要去下界找「遠古遺骸」。</p>
-  <p><strong>挖鑽石的高度</strong>（1.18 改版後）：世界最底是 Y = −64，鑽石在 <strong>Y = −59 附近最密集</strong>。挖到那個深度後開一條長長的水平隧道，比亂挖有效率得多。按 <kbd>F3</kbd> 可以看座標（Java 版）。</p>
+  <p class="ore-note"><svg class="ico-sm" aria-hidden="true"><use href="#i-coal"/></svg><strong>挖鑽石的高度</strong>（1.18 改版後）：世界最底是 Y = −64，鑽石在 <strong>Y = −59 附近最密集</strong>。挖到那個深度後開一條長長的水平隧道，比亂挖有效率得多。按 <kbd>F3</kbd> 可以看座標（Java 版）。</p>
 
   <div class="warn">
     <h3>兩個鐵則</h3>
@@ -199,25 +372,40 @@
   <table>
     <thead><tr><th>名詞</th><th>是什麼</th></tr></thead>
     <tbody>
-      <tr><th>苦力怕 Creeper</th><td>綠色的，會無聲靠近然後爆炸。麥塊的招牌</td></tr>
-      <tr><th>終界使者 Enderman</th><td>高瘦黑色，<strong>盯著牠的眼睛看牠會暴怒</strong></td></tr>
-      <tr><th>紅石 Redstone</th><td>遊戲內的電路系統，能做自動門、電梯、計算機</td></tr>
-      <tr><th>下界 Nether</th><td>地獄維度，10 個黑曜石搭門框 ＋ 打火石點燃</td></tr>
-      <tr><th>終界 End</th><td>最終維度，打敗<strong>終界龍</strong>＝通關</td></tr>
-      <tr><th>附魔 Enchant</th><td>給裝備加能力（挖更快、耐久更久）</td></tr>
-      <tr><th>種子碼 Seed</th><td>世界的生成亂數碼，同一組碼 ＝ 同一個世界</td></tr>
-      <tr><th>刷怪塔／農場</th><td>自動化生產怪物掉落物或作物的建築，玩家的驕傲</td></tr>
+      <tr><th><svg class="ico-sm" aria-hidden="true"><use href="#i-creeper"/></svg>苦力怕 Creeper</th><td>綠色的，會無聲靠近然後爆炸。麥塊的招牌</td></tr>
+      <tr><th><svg class="ico-sm" aria-hidden="true"><use href="#i-enderman"/></svg>終界使者 Enderman</th><td>高瘦黑色，<strong>盯著牠的眼睛看牠會暴怒</strong></td></tr>
+      <tr><th><svg class="ico-sm" aria-hidden="true"><use href="#i-redstone"/></svg>紅石 Redstone</th><td>遊戲內的電路系統，能做自動門、電梯、計算機</td></tr>
+      <tr><th><svg class="ico-sm" aria-hidden="true"><use href="#i-portal"/></svg>下界 Nether</th><td>地獄維度，10 個黑曜石搭門框 ＋ 打火石點燃</td></tr>
+      <tr><th><svg class="ico-sm" aria-hidden="true"><use href="#i-dragon"/></svg>終界 End</th><td>最終維度，打敗<strong>終界龍</strong>＝通關</td></tr>
+      <tr><th><svg class="ico-sm" aria-hidden="true"><use href="#i-book"/></svg>附魔 Enchant</th><td>給裝備加能力（挖更快、耐久更久）</td></tr>
+      <tr><th><svg class="ico-sm" aria-hidden="true"><use href="#i-sapling"/></svg>種子碼 Seed</th><td>世界的生成亂數碼，同一組碼 ＝ 同一個世界</td></tr>
+      <tr><th><svg class="ico-sm" aria-hidden="true"><use href="#i-wheat"/></svg>刷怪塔／農場</th><td>自動化生產怪物掉落物或作物的建築，玩家的驕傲</td></tr>
     </tbody>
   </table>
   </div>
 
   <h3 class="sub">中期目標（有方向才不會膩）</h3>
-  <ol class="steps compact">
-    <li><p><strong>穩定的家 ＋ 箱子分類</strong> — 麥塊真正的敵人是「東西太亂」</p></li>
-    <li><p><strong>鐵農場／作物農場</strong> — 資源自由的起點</p></li>
-    <li><p><strong>下界探險</strong> — 拿烈焰棒、找遠古遺骸</p></li>
-    <li><p><strong>村民交易</strong> — 用綠寶石換附魔書，比自己附魔穩定太多</p></li>
-    <li><p><strong>打終界龍</strong> — 名義上的通關，但多數玩家打完才真正開始玩</p></li>
+  <ol class="steps compact iconed">
+    <li>
+      <svg class="ico" aria-hidden="true"><use href="#i-block"/></svg>
+      <p><strong>穩定的家 ＋ 箱子分類</strong> — 麥塊真正的敵人是「東西太亂」</p>
+    </li>
+    <li>
+      <svg class="ico" aria-hidden="true"><use href="#i-wheat"/></svg>
+      <p><strong>鐵農場／作物農場</strong> — 資源自由的起點</p>
+    </li>
+    <li>
+      <svg class="ico" aria-hidden="true"><use href="#i-portal"/></svg>
+      <p><strong>下界探險</strong> — 拿烈焰棒、找遠古遺骸</p>
+    </li>
+    <li>
+      <svg class="ico" aria-hidden="true"><use href="#i-book"/></svg>
+      <p><strong>村民交易</strong> — 用綠寶石換附魔書，比自己附魔穩定太多</p>
+    </li>
+    <li>
+      <svg class="ico" aria-hidden="true"><use href="#i-dragon"/></svg>
+      <p><strong>打終界龍</strong> — 名義上的通關，但多數玩家打完才真正開始玩</p>
+    </li>
   </ol>
 </section>
 

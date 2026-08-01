@@ -59,11 +59,34 @@ body {
 
 /* ── Hero ─────────────────────────────── */
 
+/* 圖示雪碧圖本體不顯示，只供 <use> 引用 */
+.sprite {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
 .hero {
-  background: linear-gradient(160deg, var(--accent-dk), var(--earth));
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(160deg, #2f6b8f, var(--accent-dk) 65%, var(--earth));
   color: #fff;
-  padding: 4.5rem 0 4rem;
+  padding: 4.5rem 0 7.5rem;
   text-align: center;
+}
+
+.hero .wrap { position: relative; z-index: 1; }
+
+/* 底部方塊地景 */
+.scenery {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  display: block;
+  width: 100%;
+  height: 6rem;
 }
 
 .hero .kicker {
@@ -273,6 +296,27 @@ kbd {
   top: .18em;
 }
 
+/* ── 像素圖示 ─────────────────────────── */
+
+.steps.iconed > li { padding-right: 3.4rem; }
+
+.ico {
+  position: absolute;
+  right: .3rem;
+  top: .05em;
+  width: 2.15rem;
+  height: 2.15rem;
+  image-rendering: pixelated;
+}
+
+.ico-sm {
+  width: 1.15rem;
+  height: 1.15rem;
+  vertical-align: -.22em;
+  margin-right: .45rem;
+  image-rendering: pixelated;
+}
+
 /* ── 提示框 ───────────────────────────── */
 
 .warn, .danger {
@@ -407,7 +451,10 @@ footer .small { font-size: .8rem; opacity: .75; }
 
 @media (max-width: 30rem) {
   body { font-size: 16px; }
-  .hero { padding: 3.25rem 0 2.75rem; }
+  .hero { padding: 3.25rem 0 5rem; }
+  .scenery { height: 4rem; }
+  .ico { width: 1.7rem; height: 1.7rem; }
+  .steps.iconed > li { padding-right: 2.6rem; }
   section { padding-top: 2.75rem; }
   .card { padding: 1.15rem 1.15rem .75rem; }
   .final { padding: 1.75rem 1.15rem 1rem; }
