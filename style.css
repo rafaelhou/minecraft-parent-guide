@@ -477,6 +477,24 @@ footer {
 
 footer p { margin: 0 0 .4rem; }
 footer a { color: var(--accent-dk); }
+
+footer .counter {
+  display: inline-flex;
+  align-items: center;
+  gap: .1rem;
+  margin-bottom: 1.1rem;
+  padding: .35rem .95rem;
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  background: var(--surface);
+  font-size: .85rem;
+}
+
+footer .counter strong {
+  color: var(--accent-dk);
+  font-variant-numeric: tabular-nums;
+}
+
 footer .credits { font-size: .82rem; opacity: .9; }
 footer .small { font-size: .8rem; opacity: .75; }
 
