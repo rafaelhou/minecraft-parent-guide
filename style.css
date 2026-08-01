@@ -70,23 +70,55 @@ body {
 .hero {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(160deg, #2f6b8f, var(--accent-dk) 65%, var(--earth));
+  background-color: #2f4a2b;
+  background-image:
+    linear-gradient(180deg, rgba(16,26,14,.58), rgba(16,26,14,.78)),
+    url("img/hero-taiga.jpg");
+  background-size: cover;
+  background-position: center 60%;
   color: #fff;
-  padding: 4.5rem 0 7.5rem;
+  padding: 5.5rem 0 5rem;
   text-align: center;
+  text-shadow: 0 1px 12px rgba(0,0,0,.45);
 }
 
 .hero .wrap { position: relative; z-index: 1; }
 
-/* 底部方塊地景 */
-.scenery {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -1px;
+/* ── 遊戲畫面 ─────────────────────────── */
+
+.shot { margin: 1.75rem 0; }
+
+.shot img {
   display: block;
   width: 100%;
-  height: 6rem;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.shot figcaption {
+  margin-top: .55rem;
+  color: var(--muted);
+  font-size: .87rem;
+  line-height: 1.7;
+  text-align: center;
+}
+
+/* 怪物並排 */
+.mobs {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  align-items: end;
+}
+
+.mobs .shot { margin: 1.25rem 0; }
+
+.mobs img[src$="enderman.png"] {
+  object-fit: contain;
+  background: linear-gradient(180deg, #2a2438, #171426);
+  padding: .5rem 0;
 }
 
 .hero .kicker {
@@ -445,14 +477,16 @@ footer {
 
 footer p { margin: 0 0 .4rem; }
 footer a { color: var(--accent-dk); }
+footer .credits { font-size: .82rem; opacity: .9; }
 footer .small { font-size: .8rem; opacity: .75; }
 
 /* ── 手機 ─────────────────────────────── */
 
 @media (max-width: 30rem) {
   body { font-size: 16px; }
-  .hero { padding: 3.25rem 0 5rem; }
-  .scenery { height: 4rem; }
+  .hero { padding: 3.5rem 0 3.25rem; }
+  .mobs { grid-template-columns: 1fr; }
+  .mobs img[src$="enderman.png"] { max-height: 16rem; }
   .ico { width: 1.7rem; height: 1.7rem; }
   .steps.iconed > li { padding-right: 2.6rem; }
   section { padding-top: 2.75rem; }

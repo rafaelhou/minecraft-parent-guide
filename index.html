@@ -137,35 +137,6 @@
 </svg>
 
 <header class="hero">
-
-  <!-- 方塊地景（裝飾用，自繪） -->
-  <svg class="scenery" viewBox="0 0 320 96" preserveAspectRatio="xMidYMax slice"
-       aria-hidden="true" focusable="false" shape-rendering="crispEdges">
-    <!-- 太陽 -->
-    <rect x="252" y="14" width="16" height="16" fill="#ffe89a" opacity=".85"/>
-    <!-- 雲 -->
-    <rect x="40"  y="20" width="32" height="6" fill="#fff" opacity=".28"/>
-    <rect x="52"  y="14" width="20" height="6" fill="#fff" opacity=".28"/>
-    <rect x="180" y="30" width="26" height="6" fill="#fff" opacity=".22"/>
-    <!-- 遠山 -->
-    <rect x="0"   y="60" width="60" height="36" fill="#2f5b2a" opacity=".55"/>
-    <rect x="60"  y="52" width="40" height="44" fill="#2f5b2a" opacity=".55"/>
-    <rect x="228" y="56" width="52" height="40" fill="#2f5b2a" opacity=".55"/>
-    <rect x="280" y="64" width="40" height="32" fill="#2f5b2a" opacity=".55"/>
-    <!-- 樹 -->
-    <rect x="196" y="44" width="32" height="20" fill="#4f8a3c"/>
-    <rect x="204" y="36" width="16" height="8"  fill="#5c9c46"/>
-    <rect x="208" y="64" width="8"  height="16" fill="#6b4a2c"/>
-    <!-- 草地表層 -->
-    <rect x="0"   y="76" width="320" height="6"  fill="#5c9c46"/>
-    <rect x="0"   y="82" width="320" height="14" fill="#7a5433"/>
-    <rect x="96"  y="70" width="72"  height="6"  fill="#5c9c46"/>
-    <rect x="96"  y="76" width="72"  height="20" fill="#7a5433"/>
-    <!-- 礦石點綴 -->
-    <rect x="24"  y="88" width="6" height="6" fill="#9a958e"/>
-    <rect x="248" y="88" width="6" height="6" fill="#6fd6d0" opacity=".8"/>
-  </svg>
-
   <div class="wrap">
     <p class="kicker">寫給爸媽的</p>
     <h1>麥塊入門指南</h1>
@@ -189,6 +160,12 @@
 <!-- ══════════════ 吸引力 ══════════════ -->
 <section id="appeal">
   <h2>麥塊的吸引力在哪</h2>
+
+  <figure class="shot">
+    <img src="img/mountains.jpg" width="1100" height="685" loading="lazy"
+         alt="麥塊 1.18 版本的高山地形，遠處是覆雪的山峰與雲海">
+    <figcaption>1.18 改版後的高山地形。沒有任務、沒有分數——這個世界要拿來做什麼，由玩家自己決定。</figcaption>
+  </figure>
 
   <div class="cards">
     <article class="card">
@@ -360,13 +337,39 @@
   <p>前三階很快，<strong>鑽石是分水嶺</strong>，獄髓要去下界找「遠古遺骸」。</p>
   <p class="ore-note"><svg class="ico-sm" aria-hidden="true"><use href="#i-coal"/></svg><strong>挖鑽石的高度</strong>（1.18 改版後）：世界最底是 Y = −64，鑽石在 <strong>Y = −59 附近最密集</strong>。挖到那個深度後開一條長長的水平隧道，比亂挖有效率得多。按 <kbd>F3</kbd> 可以看座標（Java 版）。</p>
 
+  <figure class="shot">
+    <img src="img/lush-caves.jpg" width="1024" height="704" loading="lazy"
+         alt="麥塊的繁茂洞穴生態域，洞頂垂下發光的藤蔓，地面有水池與植被">
+    <figcaption>地底不只是石頭。1.18 之後的洞穴系統變得又深又複雜，孩子口中的「探洞」就是在這種地方。</figcaption>
+  </figure>
+
   <div class="warn">
     <h3>兩個鐵則</h3>
     <p><strong>不要直直往下挖</strong>——會掉進岩漿或深洞，這是最經典的死法。</p>
     <p><strong>隨身帶水桶</strong>——可以澆熄岩漿，也能在高處放水防摔。</p>
   </div>
 
+  <figure class="shot">
+    <img src="img/deep-dark.jpg" width="1100" height="619" loading="lazy"
+         alt="麥塊的深暗之域，深藍黑色的洞穴中散布著會偵測聲響的頭顱狀方塊">
+    <figcaption>「深暗之域」——地底最危險的地方，裡面的方塊會偵測聲響。這也是為什麼不能悶著頭往下挖。</figcaption>
+  </figure>
+
   <h3 class="sub">聽懂孩子在說什麼</h3>
+
+  <div class="mobs">
+    <figure class="shot">
+      <img src="img/creeper.jpg" width="900" height="508" loading="lazy"
+           alt="麥塊的苦力怕，綠色柱狀身體與方形的臉">
+      <figcaption><strong>苦力怕</strong>：會無聲靠近然後爆炸</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="img/enderman.png" width="229" height="447" loading="lazy"
+           alt="麥塊的終界使者，高瘦的黑色人形，眼睛是紫色的">
+      <figcaption><strong>終界使者</strong>：別盯著牠的眼睛看</figcaption>
+    </figure>
+  </div>
+
   <p>這幾個詞你知道了，餐桌對話就接得上：</p>
   <div class="tablewrap">
   <table>
@@ -452,6 +455,7 @@
 <footer>
   <div class="wrap">
     <p>本站內容為家長視角的整理，非官方資料。遊戲機制數值以 <a href="https://zh.minecraft.wiki/" target="_blank" rel="noopener">Minecraft Wiki</a> 為準。</p>
+    <p class="credits">遊戲畫面來源：<a href="https://commons.wikimedia.org/wiki/Category:Minecraft" target="_blank" rel="noopener">Wikimedia Commons</a>，作者 Xbox México，授權 <a href="https://creativecommons.org/licenses/by/3.0/deed.zh_TW" target="_blank" rel="noopener">CC BY 3.0</a>。物品與方塊圖示為本站自繪。</p>
     <p class="small">Minecraft 是 Mojang Studios 的商標。本站與 Mojang、Microsoft 無關。</p>
   </div>
 </footer>
