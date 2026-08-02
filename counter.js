@@ -12,8 +12,8 @@
       anon key 放上來才是真的危險。
    ═══════════════════════════════════════════════════════════ */
 
-const SUPABASE_URL  = 'https://YOUR-PROJECT.supabase.co';
-const SUPABASE_ANON = 'YOUR-ANON-KEY';
+const SUPABASE_URL  = 'https://ciptftupkllmwwnrqmkt.supabase.co';
+const SUPABASE_ANON = 'sb_publishable_wlrk7HnxRKzo2bhSsRgbEQ_U4KzaFZz';
 const COUNTER_ID    = 'site';
 
 (function () {
@@ -22,7 +22,7 @@ const COUNTER_ID    = 'site';
   if (!el || !box) return;
 
   // 尚未設定 → 靜靜隱藏，不要在頁面上留一個壞掉的東西
-  if (SUPABASE_URL.indexOf('YOUR-PROJECT') !== -1) {
+  if (SUPABASE_URL.indexOf('YOUR-PROJECT') !== -1 || SUPABASE_ANON.indexOf('YOUR-ANON') !== -1) {
     box.hidden = true;
     return;
   }
